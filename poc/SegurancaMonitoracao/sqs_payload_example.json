@@ -1,0 +1,7 @@
+{
+    "type": "RISK", 
+    "activatedBy": "AUTOMATIC", 
+    "areaId": "SUL_ENTRADA2", 
+    "sensorId": "PROFUND_ENTRADA2_SENSOR15", 
+    "info": "Threshold = 20m / Captura = 21m"
+}

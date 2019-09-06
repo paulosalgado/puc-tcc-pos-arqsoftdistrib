@@ -1,0 +1,14 @@
+Caro, 
+
+${LINE_1}
+
+${LINE_2}
+
+Estes foram os dados coletados para o acionamento do alerta: 
+ - ${LINE_3}.
+
+Entre em contato IMEDIATAMENTE com a equipe de Monitoramento de Barragens.
+
+
+--
+Esta é uma mensagem automática. Não responder.

@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "50210ca9-ae90-4d30-bbb3-26c6cf8c74fe",
+		"name": "Mock Server / PUC - TCC Arq Soft Distrib",
+		"description": "APIs para o servidor Mock, parte do projeto de TCC da especialização em Arquitetura de Software Distribuído da PUC Minas.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Environmental Standards",
+			"item": [
+				{
+					"name": "Get All",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-api-key",
+								"value": "{{x-api-key}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{url}}/standards",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"standards"
+							]
+						}
+					},
+					"response": [
+						{
+							"name": "Get All",
+							"originalRequest": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "{{url}}/standards",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"standards"
+									]
+								}
+							},
+							"status": "OK",
+							"code": 200,
+							"_postman_previewlanguage": "json",
+							"header": [
+								{
+									"key": "Content-Type",
+									"value": "application/json",
+									"description": "",
+									"type": "text"
+								}
+							],
+							"cookie": [],
+							"body": "{\n    \"sources\": [\n    \t{\n    \t\t\"title\": \"Lei 6398: Política Nacional do Meio Ambiente\", \n    \t\t\"standards\": [\n    \t\t\t\"A Política Nacional do Meio Ambiente tem por objetivo a preservação, melhoria e recuperação da qualidade ambiental propícia à vida, visando assegurar, no país, condições ao desenvolvimento socioeconômico, aos interesses da segurança nacional e à proteção da dignidade da vida humana.\", \n    \t\t\t\"A construção, instalação, ampliação e funcionamento de estabelecimentos e atividades utilizadoras de recursos ambientais, considerados efetiva e potencialmente poluidores, bem como os capazes, sob qualquer forma, de causar degradação ambiental, dependerão de prévio licenciamento de órgão estadual competente, integrante do Sistema Nacional do Meio Ambiente-SISNAMA, e do IBAMA, em caráter supletivo, sem prejuízo de outras licenças exigíveis.\", \n    \t\t\t\"O Poder Executivo incentivará as atividades voltadas ao meio ambiente, visando: I - ao desenvolvimento, no país, de pesquisas e processos tecnológicos destinados a reduzir a degradação da qualidade ambiental; II - à fabricação de equipamentos antipoluidores; III - a outras iniciativas que propiciem a racionalização do uso de recursos ambientais.\", \n    \t\t\t\"O poluidor que expuser a perigo a incolumidade humana, animal ou vegetal, ou estiver tornando mais grave situação de perigo existente, fica sujeito à pena de reclusão de 1 (um) a 3 (três) anos e multa de 100 (cem) a 1.000 (mil) MVR.\"\n    \t\t]\n    \t}, \n    \t{\n    \t\t\"title\": \"Lei 4771: Novo Código Florestal\", \n    \t\t\"standards\": [\n    \t\t\t\"As florestas existentes no território nacional e as demais formas de vegetação, reconhecidas de utilidade às terras que revestem, são bens de interesse comum a todos os habitantes do país, exercendo-se os direitos de propriedade, com as limitações que a legislação em geral e especialmente esta lei estabelecem.\", \n    \t\t\t\"A supressão de vegetação em área de preservação permanente somente poderá ser autorizada em caso de utilidade pública ou de interesse social, devidamente caracterizados e motivados em procedimento administrativo próprio, quando inexistir alternativa técnica e locacional ao empreendimento proposto.\", \n    \t\t\t\"Não é permitida a derrubada de florestas, situadas em áreas de inclinação entre 25 a 45 graus, só sendo nelas tolerada a extração de toros, quando em regime de utilização racional, que vise a rendimentos permanentes.\", \n    \t\t\t\"Fica proibida a exploração sob forma empírica das florestas primitivas da bacia amazônica que só poderão ser utilizadas em observância a planos técnicos de condução e manejo a serem estabelecidos por ato do Poder Público, a ser baixado dentro do prazo de um ano.\"\n    \t\t]\t\n    \t}, \n    \t{\n\t\t\t\"title\": \"Diretrizes de Boas Práticas para Mineração e Biodiversidade\", \n    \t\t\"standards\": [\n    \t\t\t\"A mineração tem o potencial de afetar a biodiversidade através do ciclo de vida de um projeto, direta e indiretamente. Os impactos diretos ou primários da mineração podem resultar de qualquer atividade que envolva supressão ou limpeza de áreas (como p. ex. a construção de estradas, a perfuração para exploração, o material estéril resultante da extração a céu aberto, a construção de taludes de rejeito) ou descargas diretas em cursos de água (eliminação fluvial de resíduos, por exemplo, rompimento de barragens de rejeito) ou no ar (tais como emissões de poeira e partículas de siderurgia). Os impactos diretos são, em geral, prontamente identificáveis. Os impactos indiretos ou secundários podem resultar de mudanças sociais ou ambientais induzidas por operações de mineração e são mais difíceis de serem identificados imediatamente. Os impactos cumulativos ocorrem onde os projetos de mineração são desenvolvidos em ambientes influenciados por outros projetos, tanto de mineração como de não-mineração.\", \n    \t\t\t\"A boa gestão de biodiversidade pode trazer benefícios às empresas de mineração, incluindo: 1) aumento da confiança e lealdade do investidor; 2) ciclos de permissão mais curtos e menos contenciosos, como resultado de melhores relacionamentos com as agências reguladoras; 3) melhoria da relação com a comunidade; 4) parcerias de apoio mais fortes com ONGs; 5) melhoria da motivação do funcionário; e 6) redução dos riscos e responsabilidades.\", \n    \t\t\t\"O engajamento de comunidades potencialmente afetadas e de outros interessados diretos na conservação da biodiversidade é fundamental para o sucesso das iniciativas de conservação. O engajamento da comunidade e de outros interessados diretos com o objetivo de desenvolver confiança, respeito e parceria, procurando manter a comunidade informada sobre as operações de uma empresa de mineração, é essencial para o sucesso de um projeto sustentável. Deve-se reconhecer que os interessados diretos podem ter interesses, perspectivas e prioridades diferentes e possivelmente conflitantes em relação à biodiversidade e sua gestão.\", \n    \t\t\t\"A identificação e avaliação dos impactos envolvem o reconhecimento dos efeitos sobre a biodiversidade e sobre os sistemas de apoio à vida (ou serviços de ecossistema). Os serviços de ecossistema podem incluir a manutenção dos sistemas hidrológicos, a proteção do solo, a decomposição de poluentes, a reciclagem de resíduos e a regulação do clima. A prestação continuada desses serviços depende da conservação da biodiversidade e pode ser de grande importância para as comunidades mais pobres.\", \n    \t\t\t\"Entre as medidas de mitigação estão a identificação e a execução de medidas para salvaguardar qualquer um dos interessados diretos dos impactos ambientais potencialmente adversos advindos das atividades de mineração. Em termos ideais, o objetivo é prevenir a ocorrência dos impactos adversos ou, se não for possível, limitar sua relevância a níveis aceitáveis.\", \n    \t\t\t\"Após os objetivos e metas do fechamento da mina terem sido estabelecidos, deverá ser elaborado um plano de recuperação. Ele deverá explicar claramente aos órgãos reguladores e interessados diretos como a empresa pretende realizar o programa de recuperação ambiental de forma a atingir os objetivos acordados. O plano deverá ser desenvolvido levando em consideração todas as informações relevantes sobre a fase pré-mineração e as prováveis estruturações pós-mineração da área explorada, além dos tipos de solo, as características do material residual, a hidrologia, as aplicações da terra e demais aspectos associados ao meio ambiente que sejam importantes para a recuperação, como também todas as limitações técnicas impostas por tais barreiras, pesquisas pré-mineração sobre a fauna e a flora locais e informações sobre os locais de monitoramento estabelecidos como referência.\", \n    \t\t\t\"Os programas de recuperação bem-sucedidos são sempre bem planejados e organizados e exigem um programa de reflorestamento detalhado como guia para a equipe responsável pelo plano de execução e recuperação. Esses programas precisam de cuidado na preparação do local antes da semeadura e do plantio para garantir que existam ótimas condições para o estabelecimento de uma vegetação diversificada e saudável.\", \n    \t\t\t\"Onde for inevitável a degradação permanente de um ecossistema, devem ser consideradas outras opções compensatórias como último recurso. Esse procedimento é conhecido comumente como “compensação ambiental”. O conceito foi desenvolvido pela primeira vez nos Estados Unidos durante a década de 70, no contexto da mitigação da perda das áreas pantanosas. As compensações poderiam envolver a criação de uma área de preservação natural ou a compra de uma área equivalente de terra destinada à proteção. A compensação para a biodiversidade significava um ‘pagamento’ (e possivelmente outras formas de apoio) para proteger a biodiversidade dentro de uma determinada região.\"\n    \t\t]\n    \t}\n    ]\n}"
+						}
+					]
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "54dff7dd-eeb3-4db6-9e82-9018ff15c61a",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "b7cc0bbc-2693-4193-b2c0-acc49d440d87",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}

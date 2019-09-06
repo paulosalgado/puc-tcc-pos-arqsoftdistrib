@@ -1,0 +1,1 @@
+aws sqs send-message --queue-url https://sqs.us-east-1.amazonaws.com/156732442254/dev-seguranca-e-monitoracao-queue --message-body file://sqs_payload_example.json

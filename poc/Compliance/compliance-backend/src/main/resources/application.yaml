@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: compliance-backend
+
+server:
+  port: 8081
+
+api:
+  client:
+    environmental:
+      name: environmental-third-party-service
+      url: https://651f1eb5-6564-488c-a0e3-61c2e19631d1.mock.pstmn.io

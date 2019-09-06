@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://dev-db-postgres.clxca5jslugq.us-east-1.rds.amazonaws.com:5432/compliance
+    username: usr_compliance
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true

@@ -1,0 +1,187 @@
+{
+  "ipcMode": null,
+  "executionRoleArn": null,
+  "containerDefinitions": [
+    {
+      "dnsSearchDomains": null,
+      "logConfiguration": null,
+      "entryPoint": null,
+      "portMappings": [
+        {
+          "hostPort": 0,
+          "protocol": "tcp",
+          "containerPort": 8083
+        }
+      ],
+      "command": null,
+      "linuxParameters": null,
+      "cpu": 0,
+      "environment": [
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_CMMN_CONTEXT-ROOT",
+          "value": "flowable-task"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_CMMN_PORT",
+          "value": "8087"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_CMMN_REST-ROOT",
+          "value": "cmmn-api"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_CMMN_SERVER-ADDRESS",
+          "value": "http://dev-load-balancer-1490849276.us-east-1.elb.amazonaws.com:8087"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_CONTENT_CONTEXT-ROOT",
+          "value": "flowable-task"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_CONTENT_PORT",
+          "value": "8087"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_CONTENT_REST-ROOT",
+          "value": "content-api"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_CONTENT_SERVER-ADDRESS",
+          "value": "http://dev-load-balancer-1490849276.us-east-1.elb.amazonaws.com:8087"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_DMN_CONTEXT-ROOT",
+          "value": "flowable-task"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_DMN_PORT",
+          "value": "8087"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_DMN_REST-ROOT",
+          "value": "dmn-api"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_DMN_SERVER-ADDRESS",
+          "value": "http://dev-load-balancer-1490849276.us-east-1.elb.amazonaws.com:8087"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_FORM_CONTEXT-ROOT",
+          "value": "flowable-task"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_FORM_PORT",
+          "value": "8087"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_FORM_REST-ROOT",
+          "value": "form-api"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_FORM_SERVER-ADDRESS",
+          "value": "http://dev-load-balancer-1490849276.us-east-1.elb.amazonaws.com:8087"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_PROCESS_CONTEXT-ROOT",
+          "value": "flowable-task"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_PROCESS_PORT",
+          "value": "8087"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_PROCESS_REST-ROOT",
+          "value": "process-api"
+        },
+        {
+          "name": "FLOWABLE_ADMIN_APP_SERVER-CONFIG_PROCESS_SERVER-ADDRESS",
+          "value": "http://dev-load-balancer-1490849276.us-east-1.elb.amazonaws.com:8087"
+        },
+        {
+          "name": "FLOWABLE_COMMON_APP_IDM-ADMIN.PASSWORD",
+          "value": "test"
+        },
+        {
+          "name": "FLOWABLE_COMMON_APP_IDM-ADMIN.USER",
+          "value": "admin"
+        },
+        {
+          "name": "FLOWABLE_COMMON_APP_IDM-REDIRECT-URL",
+          "value": "http://dev-load-balancer-1490849276.us-east-1.elb.amazonaws.com:8085/flowable-idm"
+        },
+        {
+          "name": "FLOWABLE_COMMON_APP_IDM-URL",
+          "value": "http://dev-load-balancer-1490849276.us-east-1.elb.amazonaws.com:8085/flowable-idm"
+        },
+        {
+          "name": "SERVER_PORT",
+          "value": "8083"
+        },
+        {
+          "name": "SPRING_DATASOURCE_DRIVER-CLASS-NAME",
+          "value": "org.postgresql.Driver"
+        },
+        {
+          "name": "SPRING_DATASOURCE_PASSWORD",
+          "value": "flowable"
+        },
+        {
+          "name": "SPRING_DATASOURCE_URL",
+          "value": "jdbc:postgresql://dev-db-postgres.clxca5jslugq.us-east-1.rds.amazonaws.com:5432/flowable2"
+        },
+        {
+          "name": "SPRING_DATASOURCE_USERNAME",
+          "value": "flowable_usr2"
+        }
+      ],
+      "resourceRequirements": null,
+      "ulimits": null,
+      "dnsServers": null,
+      "mountPoints": [],
+      "workingDirectory": null,
+      "secrets": null,
+      "dockerSecurityOptions": null,
+      "memory": 300,
+      "memoryReservation": null,
+      "volumesFrom": [],
+      "stopTimeout": null,
+      "image": "flowable/flowable-admin",
+      "startTimeout": null,
+      "dependsOn": null,
+      "disableNetworking": null,
+      "interactive": null,
+      "healthCheck": null,
+      "essential": true,
+      "links": null,
+      "hostname": null,
+      "extraHosts": null,
+      "pseudoTerminal": null,
+      "user": null,
+      "readonlyRootFilesystem": null,
+      "dockerLabels": null,
+      "systemControls": null,
+      "privileged": null,
+      "name": "flowable-admin"
+    }
+  ],
+  "placementConstraints": [],
+  "memory": null,
+  "taskRoleArn": null,
+  "compatibilities": [
+    "EC2"
+  ],
+  "taskDefinitionArn": "arn:aws:ecs:us-east-1:156732442254:task-definition/flowable-admin-task:1",
+  "family": "flowable-admin-task",
+  "requiresAttributes": [],
+  "pidMode": null,
+  "requiresCompatibilities": [
+    "EC2"
+  ],
+  "networkMode": "bridge",
+  "cpu": null,
+  "revision": 1,
+  "status": "ACTIVE",
+  "inferenceAccelerators": null,
+  "proxyConfiguration": null,
+  "volumes": []
+}

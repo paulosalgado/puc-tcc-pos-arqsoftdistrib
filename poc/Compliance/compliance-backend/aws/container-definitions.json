@@ -1,0 +1,27 @@
+[
+  {
+    "name": "compliance-backend",
+    "image": "156732442254.dkr.ecr.us-east-1.amazonaws.com/paulosalgado/puc/compliance-backend:v2",
+    "essential": true,
+    "memoryReservation": 230,
+    "portMappings": [
+      {
+        "containerPort": 8081
+      }
+    ],
+    "environment": [
+      {
+        "name": "spring.profiles.active",
+        "value": "stage"
+      },
+      {
+        "name": "api.client.environmental.api-key",
+        "value": "69612e90815c4c32a4037685789351b4"
+      },
+      {
+        "name": "spring.datasource.password",
+        "value": "comp1anc4p4ss"
+      }
+    ]
+  }
+]
